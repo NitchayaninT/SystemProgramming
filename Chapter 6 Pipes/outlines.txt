@@ -1,0 +1,12 @@
+Default : w -> r
+
+-Traditional Pipes (High level)
+  -popen() : r, w 
+  
+-Low-level pipe
+  -int pipe(int pipefd[2])
+    - pipefd[0] = reading end
+    - pipefd[1] = writing end
+
+-FIFO 
+  -how processes communicate via pipe
