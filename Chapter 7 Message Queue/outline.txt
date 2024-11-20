@@ -1,0 +1,21 @@
+Message Queues = Linked List of msgs
+==== SYSTEM V ====
+- message struct 
+    - long int (type of msg)
+    - the rest can be any type
+- msgget
+- msgsnd
+- msgrcv
+- msgctl
+- receiver, sender communication
+
+==== POSIX ====
+- difference between POSIX & System V
+    - msg struct (doesnt have long int)
+    - posix has timeout
+    - posix uses a string name starting with / for naming, while system V is identified by a key
+    - posix supports message priority levels, while for System V its always in FIFO order
+-mq_open
+-mq_attr 
+-mq_send (+timeout)
+-mq_receieve (+timeout)
