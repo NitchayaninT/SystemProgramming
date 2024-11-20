@@ -1,0 +1,6 @@
+==== System V ====
+-shmget (creating)
+-shmat (attach)
+-shmdt (detach)
+-shared memory control
+==== POSIX ====
